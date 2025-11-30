@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: radial-gradient(circle at center, #12141d 0%, #0b0c10 100%);
+  color: white;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.card {
+  @apply rounded-xl border border-white/10 p-6 bg-white/[0.03] backdrop-blur-md transition-all duration-300;
+}
+.card:hover {
+  @apply border-accent/70 shadow-[0_0_30px_#ff4f4f50] scale-[1.03];
+}
